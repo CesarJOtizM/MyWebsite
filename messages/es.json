@@ -1,0 +1,473 @@
+{
+  "metadata": {
+    "title": "Cesar Ortiz — Desarrollador Full Stack & Fundador",
+    "description": "Desarrollador Full Stack, CEO y Co-Fundador de NevadaTech. Construyendo productos SaaS empresariales con Clean Architecture, DDD y tecnologías web modernas."
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "howIThink": "Cómo Pienso",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "nevadatech": "NevadaTech",
+    "contact": "Contacto",
+    "downloadCV": "Descargar CV"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Cesar Ortiz",
+    "title": "Desarrollador Full Stack & Fundador",
+    "tagline": "Construyo productos que resuelven problemas reales — desde la arquitectura hasta el despliegue.",
+    "cta": {
+      "work": "Ver mi trabajo",
+      "contact": "Contáctame"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "De la Contabilidad a Construir Productos SaaS",
+    "paragraphs": {
+      "p1": "No tomé el camino tradicional hacia la tecnología. Mi carrera empezó en contabilidad y finanzas, donde aprendí a pensar en sistemas — rastrear flujos, balancear entradas y salidas, y entender cómo los errores pequeños se convierten en problemas grandes.",
+      "p2": "Esa mentalidad analítica me acompañó cuando di el salto al desarrollo de software. Autodidacta y con ganas, pasé años dominando los fundamentos: JavaScript, TypeScript, patrones de diseño y principios de arquitectura — antes de tocar un framework.",
+      "p3": "Hoy soy CEO y Co-Fundador de NevadaTech, donde ayudamos a empresas a transformar sus operaciones a través de la tecnología. Diseño sistemas usando Clean Architecture, Arquitectura Hexagonal y Domain-Driven Design — porque creo que la estructura de tu código debe reflejar la estructura de tu negocio.",
+      "p4": "Cuando no estoy construyendo productos, estoy mentoreando desarrolladores y promoviendo un enfoque de fundamentos primero para aprender. Los atajos no funcionan. Los fundamentos siempre ganan."
+    },
+    "values": {
+      "concepts": {
+        "title": "Conceptos > Código",
+        "description": "Entender el POR QUÉ antes de escribir el CÓMO. Los frameworks cambian; los principios no."
+      },
+      "architecture": {
+        "title": "Arquitectura Primero",
+        "description": "Clean, Hexagonal, DDD. La estructura debe gritar el dominio."
+      },
+      "foundations": {
+        "title": "Fundamentos Antes que Frameworks",
+        "description": "Patrones de diseño, TypeScript, bundlers — después React."
+      },
+      "products": {
+        "title": "Construir Productos, No Proyectos",
+        "description": "Pensar como fundador: impacto en el negocio, experiencia de usuario, mantenibilidad."
+      }
+    },
+    "certifications": {
+      "aws": "AWS Cloud Practitioner"
+    }
+  },
+  "howIThink": {
+    "title": "Cómo Pienso",
+    "subtitle": "Mi enfoque para construir software",
+    "intro": "No empiezo con código. Empiezo con el problema. Cada proyecto comienza entendiendo el dominio, definiendo límites, y eligiendo los patrones correctos — antes de escribir una sola línea.",
+    "pillars": {
+      "domain": {
+        "title": "Entender el Dominio",
+        "description": "Antes de escribir código, me sumerjo en el problema de negocio. ¿Quiénes son los usuarios? ¿Cuáles son los puntos de dolor? ¿Cómo se ve el éxito? La mejor arquitectura viene de entender profundamente lo que estás construyendo.",
+        "step": "01"
+      },
+      "boundaries": {
+        "title": "Definir Límites",
+        "description": "Divido sistemas complejos en contextos delimitados. Cada módulo es dueño de su dominio, expone interfaces claras y oculta su implementación. Aquí es donde brillan la Arquitectura Hexagonal y DDD.",
+        "step": "02"
+      },
+      "patterns": {
+        "title": "Elegir Patrones Intencionalmente",
+        "description": "No todo proyecto necesita DDD. No toda API necesita GraphQL. Elijo patrones basándome en la complejidad del problema, la experiencia del equipo, y el ciclo de vida del proyecto. La herramienta correcta, no la de moda.",
+        "step": "03"
+      },
+      "build": {
+        "title": "Construir con Confianza",
+        "description": "Los tests no son una ocurrencia tardía — son parte del diseño. 97% de cobertura en mi sistema de inventarios no es vanidad; es la confianza para refactorizar, escalar y desplegar sin miedo.",
+        "step": "04"
+      },
+      "iterate": {
+        "title": "Entregar e Iterar",
+        "description": "Lo perfecto es enemigo de lo entregado. Construyo MVPs, recopilo feedback e itero. Pero nunca sacrifico la arquitectura por velocidad — porque la deuda técnica siempre se cobra.",
+        "step": "05"
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Casos de estudio de productos reales",
+    "viewCase": "Leer caso de estudio",
+    "viewCode": "Ver código",
+    "viewLive": "Ver en vivo",
+    "items": {
+      "inventory": {
+        "title": "Nevada Inventory System",
+        "description": "Sistema SaaS multi-tenant de gestión de inventarios con seguimiento en tiempo real, RBAC, integración e-commerce, y 97% de cobertura de tests. Diseñado para 50+ bodegas y 100,000+ productos.",
+        "badge": "Producto SaaS",
+        "tags": ["NestJS", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "Redis", "DDD", "Arquitectura Hexagonal"]
+      },
+      "scheduler": {
+        "title": "Meeting Scheduler",
+        "description": "Aplicación web para programar asignaciones de reuniones con un algoritmo de rotación LRU puro que garantiza distribución justa. Zero side effects, motor determinístico, formularios imprimibles.",
+        "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Algoritmo LRU", "Modelado de Dominio"]
+      },
+      "nevadatech": {
+        "title": "NevadaTech",
+        "description": "Co-fundé una empresa de transformación digital sirviendo clientes en fintech, salud, e-commerce y educación. Liderando un equipo de ingenieros construyendo soluciones escalables.",
+        "badge": "Fundador",
+        "tags": ["Liderazgo", "React", "Next.js", "Node.js", "AWS", "Team Building"]
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Mi trayectoria profesional",
+    "present": "Presente",
+    "items": {
+      "nevadatech": {
+        "company": "NevadaTech",
+        "role": "CEO & Co-Fundador",
+        "startDate": "2024",
+        "endDate": "",
+        "description": "Liderando una empresa de transformación digital, diseñando soluciones para clientes en fintech, salud, e-commerce y educación.",
+        "achievements": [
+          "Co-fundé y escalé la empresa con clientes como Bambu Coliving, ToPra, FZ Academia",
+          "Arquitecté productos SaaS multi-tenant con seguridad enterprise-grade",
+          "Construí y mentoreé un equipo de ingenieros enfocado en calidad y clean architecture"
+        ]
+      },
+      "momento": {
+        "company": "Momento Seguros",
+        "role": "Desarrollador Full Stack",
+        "startDate": "Sep 2025",
+        "endDate": "",
+        "description": "Construyendo features full-stack, APIs REST, optimización de bases de datos, y resolviendo bugs en producción para una plataforma de seguros.",
+        "achievements": [
+          "Desarrollo y mantenimiento de features full-stack para plataforma de seguros",
+          "Optimización de consultas a base de datos y performance de APIs",
+          "Resolución de bugs críticos en producción con mínimo tiempo de inactividad"
+        ]
+      },
+      "flou": {
+        "company": "Flou",
+        "role": "Desarrollador Full Stack",
+        "startDate": "May 2023",
+        "endDate": "Sep 2025",
+        "description": "Construí un editor de texto web para creación de contratos online con plugins personalizados de Lexical. Lideré la planificación de sprints y definición de features.",
+        "achievements": [
+          "Construí plugins personalizados de Lexical para flujos de creación de contratos",
+          "Lideré planificación de sprints y definición de features con stakeholders",
+          "Arquitecté el frontend con React y TypeScript siguiendo patrones clean"
+        ]
+      },
+      "mox": {
+        "company": "MOX",
+        "role": "Desarrollador Full Stack",
+        "startDate": "May 2022",
+        "endDate": "May 2023",
+        "description": "Desarrollé soluciones full-stack usando React, Node.js y GraphQL.",
+        "achievements": [
+          "Entregué features full-stack usando React, Node.js y GraphQL",
+          "Integré Apollo Client/Server para fetching de datos eficiente"
+        ]
+      },
+      "frava": {
+        "company": "Frava Digital",
+        "role": "Desarrollador Full Stack",
+        "startDate": "Jul 2021",
+        "endDate": "Abr 2022",
+        "description": "Desarrollé una app de seguimiento de flujo documental que automatizó procesos manuales y redujo tiempos de respuesta en un 40%.",
+        "achievements": [
+          "Reducción del 40% en tiempos de respuesta mediante automatización de procesos",
+          "Construí sistema de cotización online para servicios de delivery",
+          "Automaticé flujos manuales de seguimiento documental"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades & Tecnologías",
+    "subtitle": "Herramientas que uso para construir productos",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          { "name": "React", "level": "primary" },
+          { "name": "Next.js", "level": "primary" },
+          { "name": "Angular", "level": "primary" },
+          { "name": "TypeScript", "level": "primary" },
+          { "name": "Tailwind CSS", "level": "primary" },
+          { "name": "Framer Motion", "level": "production" },
+          { "name": "HTML/CSS", "level": "primary" }
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": [
+          { "name": "Node.js", "level": "primary" },
+          { "name": "NestJS", "level": "primary" },
+          { "name": "GraphQL", "level": "production" },
+          { "name": "Apollo", "level": "production" },
+          { "name": "REST APIs", "level": "primary" },
+          { "name": "Express", "level": "production" }
+        ]
+      },
+      "database": {
+        "title": "Bases de Datos",
+        "items": [
+          { "name": "PostgreSQL", "level": "primary" },
+          { "name": "MongoDB", "level": "production" },
+          { "name": "Prisma", "level": "primary" },
+          { "name": "Redis", "level": "production" },
+          { "name": "MySQL", "level": "production" }
+        ]
+      },
+      "architecture": {
+        "title": "Arquitectura",
+        "items": [
+          { "name": "Clean Architecture", "level": "primary" },
+          { "name": "Arquitectura Hexagonal", "level": "primary" },
+          { "name": "DDD", "level": "primary" },
+          { "name": "Screaming Architecture", "level": "primary" },
+          { "name": "CQRS", "level": "production" },
+          { "name": "Microservicios", "level": "production" }
+        ]
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "items": [
+          { "name": "AWS", "level": "production" },
+          { "name": "Vercel", "level": "primary" },
+          { "name": "Docker", "level": "production" },
+          { "name": "CI/CD", "level": "production" },
+          { "name": "GitHub Actions", "level": "production" }
+        ]
+      },
+      "tools": {
+        "title": "Herramientas",
+        "items": [
+          { "name": "Git", "level": "primary" },
+          { "name": "LazyVim", "level": "primary" },
+          { "name": "Tmux/Zellij", "level": "primary" },
+          { "name": "Jira", "level": "production" },
+          { "name": "Figma", "level": "familiar" }
+        ]
+      }
+    },
+    "levels": {
+      "primary": "Stack Principal",
+      "production": "Experiencia en Producción",
+      "familiar": "Familiar"
+    }
+  },
+  "nevadatech": {
+    "title": "NevadaTech",
+    "subtitle": "Co-Fundador & CEO",
+    "description": "NevadaTech es una empresa de transformación digital que co-fundé para ayudar a negocios a convertir sus ideas en soluciones digitales escalables. Trabajamos con empresas en fintech, salud, e-commerce y educación — entregando aplicaciones web, apps móviles, infraestructura cloud y soluciones impulsadas por IA.",
+    "mission": "Nuestra misión es crear soluciones de software impulsadas por IA que optimicen procesos, automaticen operaciones y ayuden a las empresas a tomar mejores decisiones.",
+    "visitSite": "Visitar nevadatech.co",
+    "team": {
+      "title": "El Equipo",
+      "members": {
+        "cesar": {
+          "name": "Cesar Ortiz",
+          "role": "CEO",
+          "description": "Desarrollador Full Stack, arquitectura y visión de producto"
+        },
+        "andres": {
+          "name": "Andrés Santana",
+          "role": "CTO",
+          "description": "Desarrollador frontend y diseñador UX/UI"
+        },
+        "marlon": {
+          "name": "Marlon Ramirez",
+          "role": "COO",
+          "description": "Desarrollador backend, soluciones escalables"
+        }
+      }
+    },
+    "services": {
+      "title": "Lo Que Hacemos",
+      "items": ["Desarrollo Web", "Apps Móviles", "Soluciones Cloud", "IA & ML", "Diseño UI/UX", "DevOps", "Consultoría Tech", "E-commerce"]
+    },
+    "clients": {
+      "title": "Confían en Nosotros",
+      "items": ["Bambu Coliving", "ToPra", "FZ Academia", "VR Experience"]
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Construyamos algo juntos",
+    "description": "¿Tenés un proyecto en mente o querés colaborar? Me encantaría saber de vos. Dejame un mensaje y te respondo lo antes posible.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado! Te responderé pronto.",
+      "error": "Algo salió mal. Por favor, intenta de nuevo."
+    },
+    "validation": {
+      "nameMin": "El nombre debe tener al menos 2 caracteres",
+      "emailInvalid": "Por favor, ingresá un email válido",
+      "messageMin": "El mensaje debe tener al menos 10 caracteres"
+    },
+    "direct": {
+      "title": "O contactame directamente",
+      "email": "cesarjavierortizmontero@gmail.com"
+    }
+  },
+  "cv": {
+    "title": "Currículum",
+    "subtitle": "Descargá mi currículum",
+    "description": "Obtené una copia de mi currículum profesional con experiencia detallada, habilidades y certificaciones.",
+    "download": "Descargar PDF",
+    "viewOnline": "O mirá mi experiencia completa en este sitio",
+    "backHome": "Volver al inicio"
+  },
+  "caseStudies": {
+    "backToProjects": "Volver a proyectos",
+    "techStack": "Stack Técnico",
+    "keyMetrics": "Métricas Clave",
+    "inventory": {
+      "title": "Nevada Inventory System",
+      "subtitle": "Cómo Diseñé un SaaS Multi-Tenant desde Cero",
+      "sections": {
+        "problem": {
+          "title": "El Problema",
+          "content": "Negocios gestionando inventario en múltiples bodegas dependían de hojas de cálculo y herramientas desconectadas. Necesitaban visibilidad en tiempo real, trazabilidad y acceso basado en roles — todo en una plataforma que pudiera escalar."
+        },
+        "approach": {
+          "title": "El Enfoque",
+          "content": "Empecé mapeando el dominio: bodegas, productos, movimientos de stock, organizaciones. Cada concepto se convirtió en un contexto delimitado. La arquitectura tenía que soportar multi-tenancy desde el día uno — no agregado después."
+        },
+        "decisions": {
+          "title": "Decisiones Clave",
+          "items": [
+            {
+              "title": "¿Por qué Arquitectura Hexagonal?",
+              "content": "La lógica de negocio necesitaba estar completamente aislada de las preocupaciones de infraestructura. Usando puertos y adaptadores, la capa de dominio no sabe de HTTP, bases de datos o APIs externas. Esto hizo que testear fuera directo y refactorizar seguro."
+            },
+            {
+              "title": "¿Por qué DDD + Screaming Architecture?",
+              "content": "La estructura de carpetas grita 'gestión de inventarios', no 'app de NestJS'. Los módulos están organizados por concepto de dominio (productos, bodegas, movimientos), no por capa técnica. Cualquier desarrollador que abra el código entiende inmediatamente qué hace."
+            },
+            {
+              "title": "Aislamiento de Datos Multi-Tenant",
+              "content": "Cada consulta filtra por organización. Cada endpoint valida la propiedad del tenant. El sistema RBAC con 80+ permisos granulares asegura que los usuarios solo accedan a lo que deben — hasta operaciones individuales de bodega."
+            },
+            {
+              "title": "Integración VTEX",
+              "content": "El sistema sincroniza con VTEX para gestión de pedidos e-commerce. Productos, pedidos y fulfillment fluyen bidireccionalmente. Esto requirió un diseño cuidadoso de idempotencia para manejar reintentos y fallos de webhooks."
+            }
+          ]
+        },
+        "build": {
+          "title": "La Construcción",
+          "content": "El backend usa NestJS 11 con Prisma 7 y PostgreSQL. Redis maneja caché y rate limiting. El frontend está construido con Next.js 16, React 19 y Tailwind CSS 4, siguiendo los mismos principios hexagonales con un patrón BFF (Backend for Frontend). El sistema genera 17 tipos de reportes en formatos PDF, Excel y CSV."
+        },
+        "result": {
+          "title": "El Resultado",
+          "content": "Una plataforma SaaS en producción con un cliente real pagando, diseñada para manejar 50+ bodegas y 100,000+ productos. El backend tiene 7,749 tests con 97% de cobertura — no como vanidad, sino como la confianza para entregar features sin miedo."
+        }
+      },
+      "metrics": {
+        "tests": { "value": "7.749", "label": "Tests" },
+        "coverage": { "value": "97%", "label": "Cobertura" },
+        "permissions": { "value": "80+", "label": "Permisos" },
+        "reports": { "value": "17", "label": "Tipos de Reportes" }
+      },
+      "stack": ["NestJS 11", "Next.js 16", "React 19", "TypeScript", "PostgreSQL", "Prisma 7", "Redis", "Tailwind CSS 4", "Zod", "JWT + RBAC", "VTEX API", "Docker"]
+    },
+    "scheduler": {
+      "title": "Meeting Scheduler",
+      "subtitle": "Cómo Construí un Motor de Asignación Justo con Zero Side Effects",
+      "sections": {
+        "problem": {
+          "title": "El Problema",
+          "content": "Las reuniones de congregación requieren programación semanal de asignaciones — asignar oradores, lectores y asistentes en múltiples tipos de reuniones. Esto se hacía manualmente con hojas de cálculo, generando distribuciones injustas, conflictos y horas de trabajo administrativo cada semana."
+        },
+        "approach": {
+          "title": "El Enfoque",
+          "content": "El desafío principal no era la UI — era el algoritmo de asignación. Necesitaba un sistema que pudiera producir asignaciones justas y sin conflictos automáticamente, respetando reglas de elegibilidad, restricciones de género y requisitos por rol. Y tenía que ser determinístico y testeable."
+        },
+        "decisions": {
+          "title": "Decisiones Clave",
+          "items": [
+            {
+              "title": "¿Por qué un Motor de Asignación Puro?",
+              "content": "El motor de asignación es una función pura: recibe input (publicadores, reuniones, restricciones) y devuelve output (asignaciones) con cero side effects. Sin acceso a base de datos, sin llamadas API. Esto lo hace infinitamente testeable y completamente predecible."
+            },
+            {
+              "title": "¿Por qué Rotación LRU?",
+              "content": "La justicia no es aleatoria — es sistemática. El algoritmo LRU (Least Recently Used) asegura que quien no ha sido asignado recientemente tiene prioridad. Combinado con ordenamiento por prioridad (las partes más restrictivas primero), el algoritmo garantiza distribución justa entre todos los participantes."
+            },
+            {
+              "title": "Sistema de Asignación en Dos Pasadas",
+              "content": "El motor ejecuta dos pasadas: asignados principales primero, luego ayudantes. Esto previene conflictos donde una asignación de ayudante podría bloquear una asignación principal más crítica. El ordenamiento por prioridad asegura que las partes más restringidas se llenen primero."
+            }
+          ]
+        },
+        "build": {
+          "title": "La Construcción",
+          "content": "Construido con Next.js 16.2, TypeScript 5 y Tailwind CSS 4. La aplicación maneja reuniones entre semana, reuniones de fin de semana y rotación de asistentes/micrófonos — todo con asignación automática y capacidad completa de override manual. Genera formularios imprimibles S-140 y S-89 y soporta importación/exportación CSV para migración fácil."
+        },
+        "result": {
+          "title": "El Resultado",
+          "content": "Lo que antes tomaba horas de trabajo manual en hojas de cálculo ahora sucede en segundos. El algoritmo produce asignaciones sin conflictos y justas cada vez. Los publicadores ven sus asignaciones claramente, el historial se rastrea y la distribución de carga de trabajo es transparente."
+        }
+      },
+      "metrics": {
+        "modes": { "value": "2", "label": "Modos de Asignación" },
+        "meetingTypes": { "value": "3", "label": "Tipos de Reunión" },
+        "roles": { "value": "5+", "label": "Roles de Publicador" },
+        "forms": { "value": "2", "label": "Formularios Imprimibles" }
+      },
+      "stack": ["Next.js 16.2", "TypeScript 5", "Tailwind CSS 4", "Algoritmo LRU", "Funciones Puras", "CSV Parser", "Generación PDF"]
+    },
+    "nevadatech": {
+      "title": "NevadaTech",
+      "subtitle": "De Contador a CEO: Fundando una Empresa de Tecnología",
+      "sections": {
+        "problem": {
+          "title": "La Oportunidad",
+          "content": "Negocios en Latinoamérica — especialmente startups y PyMEs — luchan por encontrar socios tecnológicos confiables que entiendan tanto el lado técnico como el de negocio. Muchas agencias entregan código sin entender el problema que están resolviendo."
+        },
+        "approach": {
+          "title": "La Visión",
+          "content": "Fundamos NevadaTech con una filosofía clara: la tecnología debe ser un aliado estratégico, no solo un entregable. Cada proyecto empieza entendiendo el problema de negocio, luego diseñando la solución correcta — no al revés."
+        },
+        "decisions": {
+          "title": "Cómo Lo Construimos",
+          "items": [
+            {
+              "title": "Co-Fundadores Complementarios",
+              "content": "Yo aporté desarrollo full-stack y visión de producto como CEO. Andrés Santana se unió como CTO con expertise profundo en frontend y UX. Marlon Ramirez como COO maneja backend y operaciones. Juntos, cubrimos todo el espectro — diseño, desarrollo y entrega."
+            },
+            {
+              "title": "Servicios Primero, Luego Productos",
+              "content": "Empezamos con servicios para clientes para construir flujo de caja y reputación, mientras desarrollábamos nuestros propios productos (como el Sistema de Inventarios) en paralelo. Este enfoque dual reduce riesgo y crea oportunidades de ingreso recurrente."
+            },
+            {
+              "title": "Cultura Remote-First",
+              "content": "Desde el día uno, construimos una cultura remote-first con comunicación asíncrona, ownership claro y feedback honesto. Esto nos permite contratar el mejor talento sin importar la ubicación y servir clientes en diferentes zonas horarias."
+            }
+          ]
+        },
+        "build": {
+          "title": "Lo Que Hemos Construido",
+          "content": "NevadaTech sirve clientes en fintech, salud, e-commerce y educación. Entregamos aplicaciones web, apps móviles, infraestructura cloud y soluciones impulsadas por IA. Nuestro stack técnico se centra en React, Next.js, Node.js, Python y AWS/GCP."
+        },
+        "result": {
+          "title": "Dónde Estamos Hoy",
+          "content": "Hemos entregado proyectos para clientes como Bambu Coliving, ToPra, FZ Academia y VR Experience. Nuestros propios productos SaaS están ganando tracción. Y recién empezamos — el ecosistema tech de LatAm está lleno de oportunidades para equipos que priorizan calidad sobre velocidad."
+        }
+      },
+      "metrics": {
+        "clients": { "value": "4+", "label": "Clientes Atendidos" },
+        "services": { "value": "8", "label": "Áreas de Servicio" },
+        "cofounders": { "value": "3", "label": "Co-Fundadores" },
+        "stack": { "value": "10+", "label": "Tecnologías" }
+      },
+      "stack": ["React", "Next.js", "Node.js", "Python", "AWS", "GCP", "React Native", "Flutter", "Docker", "CI/CD"]
+    }
+  },
+  "footer": {
+    "builtWith": "Construido con Next.js, TypeScript & Tailwind CSS",
+    "rights": "Todos los derechos reservados."
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "metadata": {
+    "title": "Cesar Ortiz — Full Stack Developer & Founder",
+    "description": "Full Stack Developer, CEO & Co-Founder of NevadaTech. Building enterprise SaaS products with Clean Architecture, DDD, and modern web technologies."
+  },
+  "nav": {
+    "about": "About",
+    "howIThink": "How I Think",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "nevadatech": "NevadaTech",
+    "contact": "Contact",
+    "downloadCV": "Download CV"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Cesar Ortiz",
+    "title": "Full Stack Developer & Founder",
+    "tagline": "I build products that solve real problems — from architecture to deployment.",
+    "cta": {
+      "work": "View my work",
+      "contact": "Get in touch"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "From Accounting to Building SaaS Products",
+    "paragraphs": {
+      "p1": "I didn't take the traditional path into tech. My career started in accounting and finance, where I learned to think in systems — tracking flows, balancing inputs and outputs, and understanding how small errors compound into big problems.",
+      "p2": "That analytical mindset followed me when I made the leap into software development. Self-taught and driven, I spent years mastering the fundamentals: JavaScript, TypeScript, design patterns, and architecture principles — before ever touching a framework.",
+      "p3": "Today, I'm the CEO & Co-Founder of NevadaTech, where we help businesses transform their operations through technology. I architect systems using Clean Architecture, Hexagonal Architecture, and Domain-Driven Design — because I believe the structure of your code should reflect the structure of your business.",
+      "p4": "When I'm not building products, I'm mentoring developers and advocating for a foundation-first approach to learning. The shortcuts don't work. The fundamentals always win."
+    },
+    "values": {
+      "concepts": {
+        "title": "Concepts > Code",
+        "description": "Understanding WHY before writing HOW. Frameworks change; principles don't."
+      },
+      "architecture": {
+        "title": "Architecture First",
+        "description": "Clean, Hexagonal, DDD. The structure should scream the domain."
+      },
+      "foundations": {
+        "title": "Foundations Before Frameworks",
+        "description": "Design patterns, TypeScript, bundlers — then React."
+      },
+      "products": {
+        "title": "Build Products, Not Projects",
+        "description": "Think like a founder: business impact, user experience, maintainability."
+      }
+    },
+    "certifications": {
+      "aws": "AWS Cloud Practitioner"
+    }
+  },
+  "howIThink": {
+    "title": "How I Think",
+    "subtitle": "My approach to building software",
+    "intro": "I don't start with code. I start with the problem. Every project begins with understanding the domain, defining boundaries, and choosing the right patterns — before a single line is written.",
+    "pillars": {
+      "domain": {
+        "title": "Understand the Domain",
+        "description": "Before writing code, I immerse myself in the business problem. Who are the users? What are the pain points? What does success look like? The best architecture comes from deeply understanding what you're building.",
+        "step": "01"
+      },
+      "boundaries": {
+        "title": "Define Boundaries",
+        "description": "I break complex systems into bounded contexts. Each module owns its domain, exposes clear interfaces, and hides its implementation. This is where Hexagonal Architecture and DDD shine.",
+        "step": "02"
+      },
+      "patterns": {
+        "title": "Choose Patterns Intentionally",
+        "description": "Not every project needs DDD. Not every API needs GraphQL. I choose patterns based on the problem's complexity, the team's expertise, and the project's lifecycle. The right tool, not the trendy one.",
+        "step": "03"
+      },
+      "build": {
+        "title": "Build with Confidence",
+        "description": "Tests aren't an afterthought — they're part of the design. 97% coverage on my inventory system isn't vanity; it's the confidence to refactor, scale, and ship without fear.",
+        "step": "04"
+      },
+      "iterate": {
+        "title": "Ship and Iterate",
+        "description": "Perfect is the enemy of shipped. I build MVPs, gather feedback, and iterate. But I never sacrifice architecture for speed — because technical debt always comes due.",
+        "step": "05"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Case studies from real products",
+    "viewCase": "Read case study",
+    "viewCode": "View code",
+    "viewLive": "View live",
+    "items": {
+      "inventory": {
+        "title": "Nevada Inventory System",
+        "description": "Multi-tenant SaaS inventory management system with real-time tracking, RBAC, e-commerce integration, and 97% test coverage. Designed for 50+ warehouses and 100,000+ products.",
+        "badge": "SaaS Product",
+        "tags": ["NestJS", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "Redis", "DDD", "Hexagonal Architecture"]
+      },
+      "scheduler": {
+        "title": "Meeting Scheduler",
+        "description": "Web application for scheduling meeting assignments with a pure LRU rotation algorithm ensuring fair distribution. Zero side effects, deterministic engine, printable forms.",
+        "tags": ["Next.js", "TypeScript", "Tailwind CSS", "LRU Algorithm", "Domain Modeling"]
+      },
+      "nevadatech": {
+        "title": "NevadaTech",
+        "description": "Co-founded a digital transformation company serving clients across fintech, healthcare, e-commerce, and education. Leading a team of engineers building scalable solutions.",
+        "badge": "Founder",
+        "tags": ["Leadership", "React", "Next.js", "Node.js", "AWS", "Team Building"]
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey",
+    "present": "Present",
+    "items": {
+      "nevadatech": {
+        "company": "NevadaTech",
+        "role": "CEO & Co-Founder",
+        "startDate": "2024",
+        "endDate": "",
+        "description": "Leading a digital transformation company, architecting solutions for clients across fintech, healthcare, e-commerce, and education.",
+        "achievements": [
+          "Co-founded and scaled the company with clients like Bambu Coliving, ToPra, FZ Academia",
+          "Architected multi-tenant SaaS products with enterprise-grade security",
+          "Built and mentored a team of engineers focused on quality and clean architecture"
+        ]
+      },
+      "momento": {
+        "company": "Momento Seguros",
+        "role": "Full Stack Developer",
+        "startDate": "Sep 2025",
+        "endDate": "",
+        "description": "Building full-stack features, REST APIs, database optimization, and resolving production bugs for an insurance platform.",
+        "achievements": [
+          "Developing and maintaining full-stack features for insurance platform",
+          "Optimizing database queries and API performance",
+          "Resolving critical production bugs with minimal downtime"
+        ]
+      },
+      "flou": {
+        "company": "Flou",
+        "role": "Full Stack Developer",
+        "startDate": "May 2023",
+        "endDate": "Sep 2025",
+        "description": "Built a web-based text editor for online contract creation with custom Lexical plugins. Led sprint planning and feature definition.",
+        "achievements": [
+          "Built custom Lexical editor plugins for contract creation workflows",
+          "Led sprint planning and feature definition with stakeholders",
+          "Architected frontend with React and TypeScript following clean patterns"
+        ]
+      },
+      "mox": {
+        "company": "MOX",
+        "role": "Full Stack Developer",
+        "startDate": "May 2022",
+        "endDate": "May 2023",
+        "description": "Developed full-stack solutions using React, Node.js, and GraphQL.",
+        "achievements": [
+          "Delivered full-stack features using React, Node.js, and GraphQL",
+          "Integrated Apollo Client/Server for efficient data fetching"
+        ]
+      },
+      "frava": {
+        "company": "Frava Digital",
+        "role": "Full Stack Developer",
+        "startDate": "Jul 2021",
+        "endDate": "Apr 2022",
+        "description": "Developed a document flow tracking app that automated manual processes and reduced response times by 40%.",
+        "achievements": [
+          "Reduced response times by 40% through process automation",
+          "Built online quoting system for delivery services",
+          "Automated manual document tracking workflows"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Tools I use to build products",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          { "name": "React", "level": "primary" },
+          { "name": "Next.js", "level": "primary" },
+          { "name": "Angular", "level": "primary" },
+          { "name": "TypeScript", "level": "primary" },
+          { "name": "Tailwind CSS", "level": "primary" },
+          { "name": "Framer Motion", "level": "production" },
+          { "name": "HTML/CSS", "level": "primary" }
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": [
+          { "name": "Node.js", "level": "primary" },
+          { "name": "NestJS", "level": "primary" },
+          { "name": "GraphQL", "level": "production" },
+          { "name": "Apollo", "level": "production" },
+          { "name": "REST APIs", "level": "primary" },
+          { "name": "Express", "level": "production" }
+        ]
+      },
+      "database": {
+        "title": "Databases",
+        "items": [
+          { "name": "PostgreSQL", "level": "primary" },
+          { "name": "MongoDB", "level": "production" },
+          { "name": "Prisma", "level": "primary" },
+          { "name": "Redis", "level": "production" },
+          { "name": "MySQL", "level": "production" }
+        ]
+      },
+      "architecture": {
+        "title": "Architecture",
+        "items": [
+          { "name": "Clean Architecture", "level": "primary" },
+          { "name": "Hexagonal Architecture", "level": "primary" },
+          { "name": "DDD", "level": "primary" },
+          { "name": "Screaming Architecture", "level": "primary" },
+          { "name": "CQRS", "level": "production" },
+          { "name": "Microservices", "level": "production" }
+        ]
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "items": [
+          { "name": "AWS", "level": "production" },
+          { "name": "Vercel", "level": "primary" },
+          { "name": "Docker", "level": "production" },
+          { "name": "CI/CD", "level": "production" },
+          { "name": "GitHub Actions", "level": "production" }
+        ]
+      },
+      "tools": {
+        "title": "Tools",
+        "items": [
+          { "name": "Git", "level": "primary" },
+          { "name": "LazyVim", "level": "primary" },
+          { "name": "Tmux/Zellij", "level": "primary" },
+          { "name": "Jira", "level": "production" },
+          { "name": "Figma", "level": "familiar" }
+        ]
+      }
+    },
+    "levels": {
+      "primary": "Primary Stack",
+      "production": "Production Experience",
+      "familiar": "Familiar"
+    }
+  },
+  "nevadatech": {
+    "title": "NevadaTech",
+    "subtitle": "Co-Founder & CEO",
+    "description": "NevadaTech is a digital transformation company I co-founded to help businesses turn their ideas into scalable digital solutions. We partner with companies across fintech, healthcare, e-commerce, and education — delivering web applications, mobile apps, cloud infrastructure, and AI-driven solutions.",
+    "mission": "Our mission is to create AI-driven software solutions that optimize processes, automate operations, and help companies make better decisions.",
+    "visitSite": "Visit nevadatech.co",
+    "team": {
+      "title": "The Team",
+      "members": {
+        "cesar": {
+          "name": "Cesar Ortiz",
+          "role": "CEO",
+          "description": "Full Stack Developer, architecture & product vision"
+        },
+        "andres": {
+          "name": "Andrés Santana",
+          "role": "CTO",
+          "description": "Frontend developer & UX/UI designer"
+        },
+        "marlon": {
+          "name": "Marlon Ramirez",
+          "role": "COO",
+          "description": "Backend developer, scalable solutions"
+        }
+      }
+    },
+    "services": {
+      "title": "What We Do",
+      "items": ["Web Development", "Mobile Apps", "Cloud Solutions", "AI & ML", "UI/UX Design", "DevOps", "Tech Consulting", "E-commerce"]
+    },
+    "clients": {
+      "title": "Trusted By",
+      "items": ["Bambu Coliving", "ToPra", "FZ Academia", "VR Experience"]
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's build something together",
+    "description": "Have a project in mind or want to collaborate? I'd love to hear from you. Drop me a message and I'll get back to you as soon as possible.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent! I'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "validation": {
+      "nameMin": "Name must be at least 2 characters",
+      "emailInvalid": "Please enter a valid email address",
+      "messageMin": "Message must be at least 10 characters"
+    },
+    "direct": {
+      "title": "Or reach me directly",
+      "email": "cesarjavierortizmontero@gmail.com"
+    }
+  },
+  "cv": {
+    "title": "Resume",
+    "subtitle": "Download my resume",
+    "description": "Get a copy of my professional resume with detailed experience, skills, and certifications.",
+    "download": "Download PDF",
+    "viewOnline": "Or view my full experience on this site",
+    "backHome": "Back to home"
+  },
+  "caseStudies": {
+    "backToProjects": "Back to projects",
+    "techStack": "Tech Stack",
+    "keyMetrics": "Key Metrics",
+    "inventory": {
+      "title": "Nevada Inventory System",
+      "subtitle": "How I Designed a Multi-Tenant SaaS from Scratch",
+      "sections": {
+        "problem": {
+          "title": "The Problem",
+          "content": "Businesses managing inventory across multiple warehouses relied on spreadsheets and disconnected tools. They needed real-time visibility, traceability, and role-based access — all in one platform that could scale."
+        },
+        "approach": {
+          "title": "The Approach",
+          "content": "I started by mapping the domain: warehouses, products, stock movements, organizations. Each concept became a bounded context. The architecture had to support multi-tenancy from day one — not bolted on later."
+        },
+        "decisions": {
+          "title": "Key Decisions",
+          "items": [
+            {
+              "title": "Why Hexagonal Architecture?",
+              "content": "The business logic needed to be completely isolated from infrastructure concerns. By using ports and adapters, the domain layer doesn't know about HTTP, databases, or external APIs. This made testing straightforward and refactoring safe."
+            },
+            {
+              "title": "Why DDD + Screaming Architecture?",
+              "content": "The folder structure screams 'inventory management', not 'NestJS app'. Modules are organized by domain concept (products, warehouses, movements), not by technical layer. Any developer opening the codebase immediately understands what it does."
+            },
+            {
+              "title": "Multi-Tenant Data Isolation",
+              "content": "Every query filters by organization. Every endpoint validates tenant ownership. The RBAC system with 80+ granular permissions ensures users only access what they should — down to individual warehouse operations."
+            },
+            {
+              "title": "VTEX Integration",
+              "content": "The system syncs with VTEX for e-commerce order management. Products, orders, and fulfillment flow bidirectionally. This required careful idempotency design to handle retries and webhook failures."
+            }
+          ]
+        },
+        "build": {
+          "title": "The Build",
+          "content": "The backend uses NestJS 11 with Prisma 7 and PostgreSQL. Redis handles caching and rate limiting. The frontend is built with Next.js 16, React 19, and Tailwind CSS 4, following the same hexagonal principles with a BFF (Backend for Frontend) pattern. The system generates 17 types of reports in PDF, Excel, and CSV formats."
+        },
+        "result": {
+          "title": "The Result",
+          "content": "A production SaaS platform with a real paying client, designed to handle 50+ warehouses and 100,000+ products. The backend has 7,749 tests with 97% coverage — not as vanity, but as the confidence to ship features without fear."
+        }
+      },
+      "metrics": {
+        "tests": { "value": "7,749", "label": "Tests" },
+        "coverage": { "value": "97%", "label": "Coverage" },
+        "permissions": { "value": "80+", "label": "Permissions" },
+        "reports": { "value": "17", "label": "Report Types" }
+      },
+      "stack": ["NestJS 11", "Next.js 16", "React 19", "TypeScript", "PostgreSQL", "Prisma 7", "Redis", "Tailwind CSS 4", "Zod", "JWT + RBAC", "VTEX API", "Docker"]
+    },
+    "scheduler": {
+      "title": "Meeting Scheduler",
+      "subtitle": "How I Built a Fair Assignment Engine with Zero Side Effects",
+      "sections": {
+        "problem": {
+          "title": "The Problem",
+          "content": "Congregation meetings require weekly assignment scheduling — assigning speakers, readers, and attendants across multiple meeting types. This was done manually with spreadsheets, leading to unfair distributions, conflicts, and hours of administrative work every week."
+        },
+        "approach": {
+          "title": "The Approach",
+          "content": "The core challenge wasn't the UI — it was the assignment algorithm. I needed a system that could produce fair, conflict-free assignments automatically, while respecting eligibility rules, gender constraints, and role-based requirements. And it had to be deterministic and testable."
+        },
+        "decisions": {
+          "title": "Key Decisions",
+          "items": [
+            {
+              "title": "Why a Pure Assignment Engine?",
+              "content": "The assignment engine is a pure function: it takes input (publishers, meetings, constraints) and returns output (assignments) with zero side effects. No database access, no API calls. This makes it infinitely testable and completely predictable."
+            },
+            {
+              "title": "Why LRU Rotation?",
+              "content": "Fairness isn't random — it's systematic. The LRU (Least Recently Used) algorithm ensures that whoever hasn't been assigned recently gets priority. Combined with priority ordering (most restrictive parts first), the algorithm guarantees fair distribution across all participants."
+            },
+            {
+              "title": "Two-Pass Assignment System",
+              "content": "The engine runs two passes: main assignees first, then helpers. This prevents conflicts where a helper assignment might block a more critical main assignment. The priority ordering ensures the most constrained parts get filled first."
+            }
+          ]
+        },
+        "build": {
+          "title": "The Build",
+          "content": "Built with Next.js 16.2, TypeScript 5, and Tailwind CSS 4. The application handles midweek meetings, weekend meetings, and attendant/microphone rotation — all with automatic assignment and full manual override capability. It generates printable S-140 and S-89 forms and supports CSV import/export for easy migration."
+        },
+        "result": {
+          "title": "The Result",
+          "content": "What used to take hours of manual spreadsheet work now happens in seconds. The algorithm produces conflict-free, fair assignments every time. Publishers see their assignments clearly, history is tracked, and workload distribution is transparent."
+        }
+      },
+      "metrics": {
+        "modes": { "value": "2", "label": "Assignment Modes" },
+        "meetingTypes": { "value": "3", "label": "Meeting Types" },
+        "roles": { "value": "5+", "label": "Publisher Roles" },
+        "forms": { "value": "2", "label": "Printable Forms" }
+      },
+      "stack": ["Next.js 16.2", "TypeScript 5", "Tailwind CSS 4", "LRU Algorithm", "Pure Functions", "CSV Parser", "PDF Generation"]
+    },
+    "nevadatech": {
+      "title": "NevadaTech",
+      "subtitle": "From Accountant to CEO: Founding a Tech Company",
+      "sections": {
+        "problem": {
+          "title": "The Opportunity",
+          "content": "Businesses in Latin America — especially startups and SMEs — struggle to find reliable technology partners who understand both the technical and business sides. Many agencies deliver code without understanding the problem they're solving."
+        },
+        "approach": {
+          "title": "The Vision",
+          "content": "We founded NevadaTech with a clear philosophy: technology should be a strategic ally, not just a deliverable. Every project starts with understanding the business problem, then designing the right solution — not the other way around."
+        },
+        "decisions": {
+          "title": "How We Built It",
+          "items": [
+            {
+              "title": "Complementary Co-Founders",
+              "content": "I brought full-stack development and product vision as CEO. Andres Santana joined as CTO with deep frontend and UX expertise. Marlon Ramirez as COO handles backend and operations. Together, we cover the full spectrum — design, development, and delivery."
+            },
+            {
+              "title": "Service-First, Then Products",
+              "content": "We started with client services to build cash flow and reputation, while developing our own products (like the Inventory System) in parallel. This dual approach reduces risk and creates recurring revenue opportunities."
+            },
+            {
+              "title": "Remote-First Culture",
+              "content": "From day one, we built a remote-first culture with async communication, clear ownership, and honest feedback. This lets us hire the best talent regardless of location and serve clients across different time zones."
+            }
+          ]
+        },
+        "build": {
+          "title": "What We've Built",
+          "content": "NevadaTech serves clients across fintech, healthcare, e-commerce, and education. We deliver web applications, mobile apps, cloud infrastructure, and AI-driven solutions. Our tech stack centers on React, Next.js, Node.js, Python, and AWS/GCP."
+        },
+        "result": {
+          "title": "Where We Are Today",
+          "content": "We've delivered projects for clients like Bambu Coliving, ToPra, FZ Academia, and VR Experience. Our own SaaS products are gaining traction. And we're just getting started — the LatAm tech ecosystem is full of opportunity for teams that prioritize quality over speed."
+        }
+      },
+      "metrics": {
+        "clients": { "value": "4+", "label": "Clients Served" },
+        "services": { "value": "8", "label": "Service Areas" },
+        "cofounders": { "value": "3", "label": "Co-Founders" },
+        "stack": { "value": "10+", "label": "Technologies" }
+      },
+      "stack": ["React", "Next.js", "Node.js", "Python", "AWS", "GCP", "React Native", "Flutter", "Docker", "CI/CD"]
+    }
+  },
+  "footer": {
+    "builtWith": "Built with Next.js, TypeScript & Tailwind CSS",
+    "rights": "All rights reserved."
+  }
+}

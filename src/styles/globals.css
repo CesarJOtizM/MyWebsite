@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+
+  --color-background: #fafafa;
+  --color-foreground: #0a0a0a;
+  --color-muted: #737373;
+  --color-muted-foreground: #525252;
+  --color-accent: #0ea5e9;
+  --color-accent-foreground: #f0f9ff;
+  --color-border: #e5e5e5;
+  --color-card: #ffffff;
+  --color-card-foreground: #0a0a0a;
+}
+
+@layer base {
+  .dark {
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
+    --color-muted: #888888;
+    --color-muted-foreground: #a3a3a3;
+    --color-accent: #38bdf8;
+    --color-accent-foreground: #082f49;
+    --color-border: #262626;
+    --color-card: #141414;
+    --color-card-foreground: #ededed;
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+}
+
+/* Hero background blobs */
+@keyframes hero-blob-drift-1 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(60px, -40px); }
+  66% { transform: translate(-30px, 50px); }
+}
+
+@keyframes hero-blob-drift-2 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(-50px, 30px); }
+  66% { transform: translate(40px, -60px); }
+}
+
+@keyframes hero-blob-drift-3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(30px, 30px); }
+}
+
+.hero-blob-1 {
+  animation: hero-blob-drift-1 18s linear infinite;
+}
+
+.hero-blob-2 {
+  animation: hero-blob-drift-2 20s linear infinite;
+}
+
+.hero-blob-3 {
+  animation: hero-blob-drift-3 15s linear infinite;
+}
+
+/* Hero scroll indicator bounce */
+@keyframes hero-scroll-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+.hero-scroll-bounce {
+  animation: hero-scroll-bounce 2s ease-in-out infinite;
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--color-accent);
+  width: 100%;
+  transform-origin: left;
+  scale: 0 1;
+  animation: scroll-progress linear;
+  animation-timeline: scroll();
+  z-index: 50;
+}
+
+@keyframes scroll-progress {
+  to {
+    scale: 1 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
