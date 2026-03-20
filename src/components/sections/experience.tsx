@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion, type Variants } from 'motion/react';
 import { cn } from '@/lib/utils';
+import { GradientGlow } from '@/components/ui/gradient-glow';
 import { experienceOrder, type ExperienceKey } from '@/content/experience';
 
 const fadeUp: Variants = {
@@ -231,8 +232,11 @@ export function Experience() {
   const headerTransition = prefersReducedMotion ? instant : smooth;
 
   return (
-    <section id="experience" className="px-4 py-24 sm:py-32" aria-label={t('title')}>
-      <div className="mx-auto max-w-4xl">
+    <section id="experience" className="relative overflow-hidden px-4 py-24 sm:py-32" aria-label={t('title')}>
+      <GradientGlow position="top-left" size="lg" intensity={0.04} color="secondary" drift="hero-blob-3" />
+      <GradientGlow position="bottom-right" size="md" intensity={0.05} color="accent" drift="hero-blob-1" />
+
+      <div className="relative mx-auto max-w-4xl">
         {/* Section header */}
         <motion.div
           className="mb-16 text-center"

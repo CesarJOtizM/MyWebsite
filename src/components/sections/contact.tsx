@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { contactFormSchema, type ContactFormData } from '@/lib/validations';
+import { GradientGlow } from '@/components/ui/gradient-glow';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -128,10 +129,14 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="px-4 py-24 sm:py-32"
+      className="relative overflow-hidden px-4 py-24 sm:py-32"
       aria-label={t('title')}
     >
-      <div className="mx-auto max-w-6xl">
+      {/* Background glow */}
+      <GradientGlow position="bottom-left" size="lg" intensity={0.06} color="mixed" drift="hero-blob-1" />
+      <GradientGlow position="top-right" size="md" intensity={0.05} color="secondary" drift="hero-blob-3" />
+
+      <div className="relative mx-auto max-w-6xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Left column — Info */}
           <div>

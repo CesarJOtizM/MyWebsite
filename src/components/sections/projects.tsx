@@ -12,6 +12,7 @@ import { ArrowRight, ExternalLink, Github } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Link } from '@/i18n/navigation';
 import { projects, type ProjectData } from '@/content/projects';
+import { GradientGlow } from '@/components/ui/gradient-glow';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -194,8 +195,12 @@ export function Projects() {
   });
 
   return (
-    <section id="projects" className="px-4 py-24 sm:py-32" aria-label="Projects">
-      <div className="mx-auto max-w-5xl">
+    <section id="projects" className="relative overflow-hidden px-4 py-24 sm:py-32" aria-label="Projects">
+      {/* Background glow */}
+      <GradientGlow position="top-right" size="lg" intensity={0.06} color="secondary" drift="hero-blob-2" />
+      <GradientGlow position="bottom-left" size="md" intensity={0.05} color="accent" drift="hero-blob-3" />
+
+      <div className="relative mx-auto max-w-5xl">
         {/* Section header */}
         <motion.div
           className="mb-16 text-center"

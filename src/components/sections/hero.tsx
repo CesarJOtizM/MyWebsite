@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion, type Variants } from 'motion/react';
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { GradientGlow } from '@/components/ui/gradient-glow';
 
 const SOCIAL_LINKS = [
   {
@@ -78,24 +79,9 @@ export function Hero() {
     >
       {/* Background gradient mesh */}
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div
-          className={cn(
-            'absolute -left-1/4 -top-1/4 h-[600px] w-[600px] rounded-full bg-accent/[0.04] blur-[120px]',
-            'hero-blob-1',
-          )}
-        />
-        <div
-          className={cn(
-            'absolute -bottom-1/4 -right-1/4 h-[500px] w-[500px] rounded-full bg-accent/[0.03] blur-[100px]',
-            'hero-blob-2',
-          )}
-        />
-        <div
-          className={cn(
-            'absolute left-1/3 top-1/2 h-[400px] w-[400px] rounded-full bg-accent/[0.03] blur-[80px]',
-            'hero-blob-3',
-          )}
-        />
+        <GradientGlow position="top-left" size="xl" intensity={0.10} color="accent" drift="hero-blob-1" />
+        <GradientGlow position="bottom-right" size="lg" intensity={0.08} color="secondary" drift="hero-blob-2" />
+        <GradientGlow position="center" size="md" intensity={0.06} color="mixed" drift="hero-blob-3" />
       </div>
 
       {/* Content */}

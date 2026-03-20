@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion, type Variants } from 'motion/react';
 import { cn } from '@/lib/utils';
+import { GradientGlow } from '@/components/ui/gradient-glow';
 
 const PILLAR_KEYS = ['domain', 'boundaries', 'patterns', 'build', 'iterate'] as const;
 
@@ -58,14 +59,12 @@ export function HowIThink() {
   return (
     <section
       id="how-i-think"
-      className="relative overflow-hidden bg-card px-4 py-24 sm:py-32"
+      className="relative overflow-hidden bg-card/80 px-4 py-24 sm:py-32"
       aria-labelledby="how-i-think-heading"
     >
-      {/* Subtle background accent */}
-      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div className="absolute -right-1/4 top-0 h-[500px] w-[500px] rounded-full bg-accent/[0.03] blur-[100px]" />
-        <div className="absolute -left-1/4 bottom-0 h-[400px] w-[400px] rounded-full bg-accent/[0.02] blur-[80px]" />
-      </div>
+      {/* Background glows */}
+      <GradientGlow position="top-right" size="lg" intensity={0.05} color="mixed" drift="hero-blob-2" />
+      <GradientGlow position="bottom-left" size="md" intensity={0.04} color="accent" drift="hero-blob-1" />
 
       <div className="relative z-10 mx-auto max-w-5xl">
         {/* Header */}

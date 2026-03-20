@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion, type Variants } from 'motion/react';
 import { cn } from '@/lib/utils';
+import { GradientGlow } from '@/components/ui/gradient-glow';
 
 const VALUE_KEYS = ['concepts', 'architecture', 'foundations', 'products'] as const;
 
@@ -51,10 +52,13 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative px-4 py-24 sm:py-32"
+      className="relative overflow-hidden px-4 py-24 sm:py-32"
       aria-label="About"
     >
-      <div className="mx-auto max-w-6xl">
+      <GradientGlow position="top-right" size="lg" intensity={0.05} color="accent" drift="hero-blob-1" />
+      <GradientGlow position="bottom-left" size="md" intensity={0.04} color="secondary" drift="hero-blob-3" />
+
+      <div className="relative mx-auto max-w-6xl">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
           {/* Left column — Text */}
           <div>

@@ -6,15 +6,16 @@
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-mono), ui-monospace, monospace;
 
-  --color-background: #fafafa;
-  --color-foreground: #0a0a0a;
-  --color-muted: #737373;
-  --color-muted-foreground: #525252;
-  --color-accent: #0ea5e9;
-  --color-accent-foreground: #f0f9ff;
-  --color-border: #e5e5e5;
+  --color-background: #f8fafc;
+  --color-foreground: #0f172a;
+  --color-muted: #64748b;
+  --color-muted-foreground: #475569;
+  --color-accent: #2563eb;
+  --color-accent-foreground: #eff6ff;
+  --color-accent-secondary: #7c3aed;
+  --color-border: #e2e8f0;
   --color-card: #ffffff;
-  --color-card-foreground: #0a0a0a;
+  --color-card-foreground: #0f172a;
 }
 
 @layer base {
@@ -23,10 +24,11 @@
     --color-foreground: #ededed;
     --color-muted: #888888;
     --color-muted-foreground: #a3a3a3;
-    --color-accent: #38bdf8;
+    --color-accent: #3b82f6;
     --color-accent-foreground: #082f49;
-    --color-border: #262626;
-    --color-card: #141414;
+    --color-accent-secondary: #8b5cf6;
+    --color-border: #1e293b;
+    --color-card: #0f172a;
     --color-card-foreground: #ededed;
   }
 
@@ -37,7 +39,38 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    background-image:
+      radial-gradient(
+        circle,
+        color-mix(in srgb, var(--color-muted) 12%, transparent) 1px,
+        transparent 1px
+      );
+    background-size: 24px 24px;
   }
+
+  .dark body {
+    background-image:
+      radial-gradient(
+        circle,
+        color-mix(in srgb, var(--color-border) 20%, transparent) 1px,
+        transparent 1px
+      );
+    background-size: 24px 24px;
+  }
+}
+
+/* Noise texture overlay — premium feel */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
 /* Hero background blobs */
