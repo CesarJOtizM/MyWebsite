@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ['en', 'es'];
   const routes = [
     '',
-    '/projects/nevada-inventory',
+    '/projects/nevada-demo',
     '/projects/meeting-scheduler',
     '/projects/nevadatech',
     '/cv',

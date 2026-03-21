@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion, type Variants } from 'motion/react';
 import { ExternalLink } from 'lucide-react';
@@ -7,10 +8,10 @@ import { cn } from '@/lib/utils';
 
 const MEMBER_KEYS = ['cesar', 'andres', 'marlon'] as const;
 
-const MEMBER_INITIALS: Record<(typeof MEMBER_KEYS)[number], string> = {
-  cesar: 'CO',
-  andres: 'AS',
-  marlon: 'MR',
+const MEMBER_PHOTOS: Record<(typeof MEMBER_KEYS)[number], string> = {
+  cesar: '/team/cesar.jpg',
+  andres: '/team/andres.jpg',
+  marlon: '/team/marlon.jpg',
 };
 
 const fadeUp: Variants = {
@@ -49,7 +50,6 @@ export function NevadaTech() {
   const itemTransition = prefersReducedMotion ? instant : smooth();
 
   const services = t.raw('services.items') as string[];
-  const clients = t.raw('clients.items') as string[];
 
   return (
     <section
@@ -112,6 +112,55 @@ export function NevadaTech() {
           </motion.blockquote>
         </div>
 
+        {/* Site Screenshots */}
+        <motion.div
+          className="mb-16 grid grid-cols-1 gap-4 lg:grid-cols-2"
+          variants={prefersReducedMotion ? undefined : staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <motion.div
+            className="overflow-hidden rounded-xl border border-border lg:col-span-2"
+            variants={fadeUp}
+            transition={itemTransition}
+          >
+            <Image
+              src="/nevadatech/hero.png"
+              alt="NevadaTech — Landing page"
+              width={1440}
+              height={900}
+              className="h-auto w-full object-cover"
+            />
+          </motion.div>
+          <motion.div
+            className="overflow-hidden rounded-xl border border-border"
+            variants={fadeUp}
+            transition={itemTransition}
+          >
+            <Image
+              src="/nevadatech/projects.png"
+              alt="NevadaTech — Featured projects"
+              width={1440}
+              height={900}
+              className="h-auto w-full object-cover"
+            />
+          </motion.div>
+          <motion.div
+            className="overflow-hidden rounded-xl border border-border"
+            variants={fadeUp}
+            transition={itemTransition}
+          >
+            <Image
+              src="/nevadatech/services.png"
+              alt="NevadaTech — Services overview"
+              width={1440}
+              height={900}
+              className="h-auto w-full object-cover"
+            />
+          </motion.div>
+        </motion.div>
+
         {/* Team */}
         <div className="mb-16">
           <motion.h3
@@ -142,16 +191,14 @@ export function NevadaTech() {
                 variants={fadeUp}
                 transition={itemTransition}
               >
-                {/* Avatar placeholder with initials */}
-                <div
-                  className={cn(
-                    'mb-4 flex h-20 w-20 items-center justify-center rounded-full',
-                    'border border-border bg-card text-xl font-bold text-accent',
-                  )}
-                  aria-hidden="true"
-                >
-                  {MEMBER_INITIALS[key]}
-                </div>
+                {/* Avatar */}
+                <Image
+                  src={MEMBER_PHOTOS[key]}
+                  alt={t(`team.members.${key}.name`)}
+                  width={80}
+                  height={80}
+                  className="mb-4 h-20 w-20 rounded-full border border-border object-cover"
+                />
 
                 <h4 className="text-base font-semibold text-card-foreground">
                   {t(`team.members.${key}.name`)}
@@ -199,39 +246,6 @@ export function NevadaTech() {
                 transition={itemTransition}
               >
                 {service}
-              </motion.span>
-            ))}
-          </motion.div>
-        </div>
-
-        {/* Clients */}
-        <div className="mb-12">
-          <motion.h3
-            className="mb-6 text-xl font-semibold tracking-tight sm:text-2xl"
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={itemTransition}
-          >
-            {t('clients.title')}
-          </motion.h3>
-
-          <motion.div
-            className="flex flex-wrap gap-4"
-            variants={prefersReducedMotion ? undefined : staggerFast}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            {clients.map((client) => (
-              <motion.span
-                key={client}
-                className="text-muted-foreground text-base font-medium"
-                variants={fadeUp}
-                transition={itemTransition}
-              >
-                {client}
               </motion.span>
             ))}
           </motion.div>

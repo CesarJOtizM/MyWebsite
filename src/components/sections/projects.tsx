@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import {
   motion,
@@ -88,15 +89,31 @@ function ProjectCard({
             featured
               ? 'h-48 md:h-auto md:w-2/5'
               : 'h-48',
-            'bg-gradient-to-br from-accent/10 via-accent/5 to-transparent',
+            'bg-linear-to-br from-accent/10 via-accent/5 to-transparent',
           )}
           aria-hidden="true"
         >
-          <div className="text-accent/20 text-6xl font-bold select-none">
-            {project.translationKey === 'inventory' && '{}'}
-            {project.translationKey === 'scheduler' && '</>'}
-            {project.translationKey === 'nevadatech' && 'NT'}
-          </div>
+          {project.translationKey === 'nevadatech' ? (
+            <Image
+              src="/nevadatech/hero.png"
+              alt="NevadaTech website"
+              width={1440}
+              height={900}
+              className="h-full w-full object-cover"
+            />
+          ) : project.translationKey === 'inventory' ? (
+            <Image
+              src="/nevadatech/inventory-dashboard.png"
+              alt="Nevada Inventory System — Dashboard"
+              width={1440}
+              height={900}
+              className="h-full w-full object-cover"
+            />
+          ) : (
+            <div className="text-accent/20 text-6xl font-bold select-none">
+              {project.translationKey === 'scheduler' && '</>'}
+            </div>
+          )}
         </div>
 
         {/* Content */}
@@ -129,6 +146,23 @@ function ProjectCard({
               </span>
             ))}
           </div>
+
+          {/* Demo credentials */}
+          {project.translationKey === 'inventory' && (
+            <div className="rounded-lg border border-border bg-background p-3 text-xs">
+              <p className="mb-1.5 font-semibold text-card-foreground">
+                {t('items.inventory.demo.title')}
+              </p>
+              <div className="space-y-0.5 font-mono text-muted-foreground">
+                <p>Org: {t('items.inventory.demo.organization')}</p>
+                <p>Email: {t('items.inventory.demo.email')}</p>
+                <p>Pass: {t('items.inventory.demo.password')}</p>
+              </div>
+              <p className="mt-1.5 text-muted-foreground/70">
+                {t('items.inventory.demo.note')}
+              </p>
+            </div>
+          )}
 
           {/* Actions */}
           <div className="mt-auto flex flex-wrap items-center gap-3 pt-2">

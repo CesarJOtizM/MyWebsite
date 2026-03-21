@@ -8,9 +8,9 @@ export interface ProjectData {
 
 export const projects: ProjectData[] = [
   {
-    slug: 'nevada-inventory',
+    slug: 'nevada-demo',
     translationKey: 'inventory',
-    codeUrl: 'https://github.com/CesarJOtizM/improved-parakeet',
+    liveUrl: 'https://jubilant-octo-invention-kappa.vercel.app/es/login',
     featured: true,
   },
   {

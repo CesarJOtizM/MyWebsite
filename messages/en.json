@@ -95,9 +95,16 @@
     "items": {
       "inventory": {
         "title": "Nevada Inventory System",
-        "description": "Multi-tenant SaaS inventory management system with real-time tracking, RBAC, e-commerce integration, and 97% test coverage. Designed for 50+ warehouses and 100,000+ products.",
+        "description": "Multi-tenant SaaS inventory management system with real-time tracking, RBAC, e-commerce integration, and 97% test coverage. Designed for 50+ warehouses and 100,000+ products. Try the sandbox to explore it live.",
         "badge": "SaaS Product",
-        "tags": ["NestJS", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "Redis", "DDD", "Hexagonal Architecture"]
+        "tags": ["NestJS", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "Redis", "DDD", "Hexagonal Architecture"],
+        "demo": {
+          "title": "Sandbox credentials",
+          "organization": "nevada-demo",
+          "email": "admin@nevada-demo.com",
+          "password": "demo1234",
+          "note": "Other roles (manager, viewer) use the same password. The demo has a cold start, so the first login may take a moment."
+        }
       },
       "scheduler": {
         "title": "Meeting Scheduler",

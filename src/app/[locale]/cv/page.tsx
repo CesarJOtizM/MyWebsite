@@ -37,7 +37,7 @@ export default function CVPage() {
 
         <a
           href={cvUrl}
-          download
+          download={`cesar-ortiz-cv-${locale}.pdf`}
           className={cn(
             'inline-flex items-center gap-3 rounded-xl bg-accent px-8 py-4 text-lg font-semibold text-accent-foreground',
             'transition-all duration-200 hover:brightness-110 hover:scale-[1.02] active:scale-[0.98]',

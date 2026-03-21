@@ -95,9 +95,16 @@
     "items": {
       "inventory": {
         "title": "Nevada Inventory System",
-        "description": "Sistema SaaS multi-tenant de gestión de inventarios con seguimiento en tiempo real, RBAC, integración e-commerce, y 97% de cobertura de tests. Diseñado para 50+ bodegas y 100,000+ productos.",
+        "description": "Sistema SaaS multi-tenant de gestión de inventarios con seguimiento en tiempo real, RBAC, integración e-commerce, y 97% de cobertura de tests. Diseñado para 50+ bodegas y 100,000+ productos. Probá el sandbox para explorarlo en vivo.",
         "badge": "Producto SaaS",
-        "tags": ["NestJS", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "Redis", "DDD", "Arquitectura Hexagonal"]
+        "tags": ["NestJS", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "Redis", "DDD", "Arquitectura Hexagonal"],
+        "demo": {
+          "title": "Credenciales del sandbox",
+          "organization": "nevada-demo",
+          "email": "admin@nevada-demo.com",
+          "password": "demo1234",
+          "note": "Los demás roles (manager, viewer) usan la misma contraseña. La demo tiene arranque en frío, así que el primer login puede tardar un poco."
+        }
       },
       "scheduler": {
         "title": "Meeting Scheduler",

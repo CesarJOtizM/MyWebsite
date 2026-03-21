@@ -44,3 +44,5 @@ next-env.d.ts
 /CV*.pdf
 /E-*.pdf
 /E-*.docx
+
+.vercel

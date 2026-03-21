@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion, type Variants } from 'motion/react';
 import { cn } from '@/lib/utils';
@@ -129,20 +130,23 @@ export function About() {
 
           {/* Right column — Values + Photo placeholder */}
           <div className="flex flex-col gap-8">
-            {/* Photo placeholder */}
+            {/* Photo */}
             <motion.div
-              className={cn(
-                'flex h-32 w-32 items-center justify-center self-center rounded-full lg:self-start',
-                'border border-border bg-card text-3xl font-bold text-accent',
-              )}
+              className="self-center lg:self-start"
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               transition={itemTransition}
-              aria-label="Cesar Ortiz photo placeholder"
             >
-              CO
+              <Image
+                src="/team/cesar.jpg"
+                alt="Cesar Ortiz"
+                width={128}
+                height={128}
+                className="h-32 w-32 rounded-full border border-border object-cover"
+                priority
+              />
             </motion.div>
 
             {/* Value cards — 2x2 grid */}
