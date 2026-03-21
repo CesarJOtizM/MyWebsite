@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://cesarortiz.dev/sitemap.xml',
+    sitemap: 'https://cesarortiz.co/sitemap.xml',
   };
 }

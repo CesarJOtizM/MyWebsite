@@ -56,6 +56,7 @@ export function Contact() {
     honeypot: '',
   });
   const [errors, setErrors] = useState<FieldErrors>({});
+  const [submitError, setSubmitError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -99,19 +100,25 @@ export function Contact() {
     if (!validateForm()) return;
 
     setIsSubmitting(true);
+    setSubmitError('');
 
-    // Simulate API call — replace with real integration later
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
-    // eslint-disable-next-line no-console
-    console.log('Contact form submitted:', {
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
-    });
+      if (!res.ok) {
+        throw new Error('Failed to send');
+      }
 
-    setIsSubmitting(false);
-    setIsSuccess(true);
+      setIsSuccess(true);
+    } catch {
+      setSubmitError(t('form.error'));
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   function updateField(field: keyof typeof formData, value: string) {
@@ -435,6 +442,13 @@ export function Contact() {
                       onChange={(e) => updateField('honeypot', e.target.value)}
                     />
                   </div>
+
+                  {/* Error message */}
+                  {submitError && (
+                    <p className="text-sm text-red-500" role="alert">
+                      {submitError}
+                    </p>
+                  )}
 
                   {/* Submit */}
                   <button

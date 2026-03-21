@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const baseUrl = 'https://cesarortiz.dev';
+const baseUrl = 'https://cesarortiz.co';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ['en', 'es'];
