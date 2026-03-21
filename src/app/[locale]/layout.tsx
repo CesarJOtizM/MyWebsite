@@ -36,6 +36,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t('title'),
     description: t('description'),
     metadataBase: new URL('https://cesarortiz.co'),
+    icons: {
+      icon: [
+        { url: '/icon-light.svg', media: '(prefers-color-scheme: light)' },
+        { url: '/icon-dark.svg', media: '(prefers-color-scheme: dark)' },
+      ],
+    },
     alternates: {
       canonical: `/${locale}`,
       languages: {
