@@ -76,7 +76,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} flex min-h-screen flex-col font-sans antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -86,7 +86,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <NextIntlClientProvider messages={messages}>
             <ScrollProgress />
             <Header />
-            <main className="min-h-screen">{children}</main>
+            <main className="flex flex-1 flex-col">{children}</main>
             <Footer />
           </NextIntlClientProvider>
         </ThemeProvider>

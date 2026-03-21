@@ -26,7 +26,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: true });
     }
 
-    const { error } = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: 'Portfolio <hello@cesarortiz.co>',
       to: TO_EMAIL,
       replyTo: email,
@@ -42,7 +42,7 @@ export async function POST(request: Request) {
       );
     }
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json(data);
   } catch {
     return NextResponse.json(
       { error: 'Internal server error' },

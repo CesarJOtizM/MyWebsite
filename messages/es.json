@@ -20,7 +20,7 @@
     "tagline": "Construyo productos que resuelven problemas reales — desde la arquitectura hasta el despliegue.",
     "cta": {
       "work": "Ver mi trabajo",
-      "contact": "Contáctame"
+      "contact": "Escríbeme"
     }
   },
   "about": {
@@ -95,7 +95,7 @@
     "items": {
       "inventory": {
         "title": "Nevada Inventory System",
-        "description": "Sistema SaaS multi-tenant de gestión de inventarios con seguimiento en tiempo real, RBAC, integración e-commerce, y 97% de cobertura de tests. Diseñado para 50+ bodegas y 100,000+ productos. Probá el sandbox para explorarlo en vivo.",
+        "description": "Sistema SaaS multi-tenant de gestión de inventarios con seguimiento en tiempo real, RBAC, integración e-commerce, y 97% de cobertura de tests. Diseñado para 50+ bodegas y 100,000+ productos. Prueba el sandbox para explorarlo en vivo.",
         "badge": "Producto SaaS",
         "tags": ["NestJS", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "Redis", "DDD", "Arquitectura Hexagonal"],
         "demo": {
@@ -298,7 +298,7 @@
   "contact": {
     "title": "Contacto",
     "subtitle": "Construyamos algo juntos",
-    "description": "¿Tenés un proyecto en mente o querés colaborar? Me encantaría saber de vos. Dejame un mensaje y te respondo lo antes posible.",
+    "description": "¿Tienes un proyecto en mente o quieres colaborar? Me encantaría escucharte. Déjame un mensaje y te respondo lo antes posible.",
     "form": {
       "name": "Nombre",
       "email": "Correo electrónico",
@@ -310,20 +310,20 @@
     },
     "validation": {
       "nameMin": "El nombre debe tener al menos 2 caracteres",
-      "emailInvalid": "Por favor, ingresá un email válido",
+      "emailInvalid": "Por favor, ingresa un email válido",
       "messageMin": "El mensaje debe tener al menos 10 caracteres"
     },
     "direct": {
-      "title": "O contactame directamente",
+      "title": "O escríbeme directamente",
       "email": "cesarjavierortizmontero@gmail.com"
     }
   },
   "cv": {
-    "title": "Currículum",
-    "subtitle": "Descargá mi currículum",
-    "description": "Obtené una copia de mi currículum profesional con experiencia detallada, habilidades y certificaciones.",
+    "title": "Hoja de Vida",
+    "subtitle": "Descarga mi hoja de vida",
+    "description": "Obtén una copia de mi hoja de vida con experiencia detallada, habilidades y certificaciones.",
     "download": "Descargar PDF",
-    "viewOnline": "O mirá mi experiencia completa en este sitio",
+    "viewOnline": "O mira mi experiencia completa en este sitio",
     "backHome": "Volver al inicio"
   },
   "caseStudies": {
@@ -472,6 +472,14 @@
       },
       "stack": ["React", "Next.js", "Node.js", "Python", "AWS", "GCP", "React Native", "Flutter", "Docker", "CI/CD"]
     }
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Perdido en el vacío",
+    "description": "Este pingüino se fue por cualquier lado y no encuentra el camino de vuelta. La verdad, nosotros tampoco encontramos esa página.",
+    "hint": "Capaz se derritió. Capaz nunca existió. Vaya uno a saber.",
+    "cta": "Llevame a casa",
+    "penguinThought": "¿¡Dónde estoy!?"
   },
   "footer": {
     "builtWith": "Construido con Next.js, TypeScript & Tailwind CSS",

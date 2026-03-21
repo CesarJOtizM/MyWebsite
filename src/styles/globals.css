@@ -134,6 +134,86 @@ body::before {
   }
 }
 
+/* 404 Penguin walking animation */
+@keyframes penguin-walk {
+  0% { transform: translateX(-50vw) scaleX(1); }
+  45% { transform: translateX(50vw) scaleX(1); }
+  50% { transform: translateX(50vw) scaleX(-1); }
+  95% { transform: translateX(-50vw) scaleX(-1); }
+  100% { transform: translateX(-50vw) scaleX(1); }
+}
+
+@keyframes penguin-waddle {
+  0%, 100% { rotate: 0deg; }
+  25% { rotate: -8deg; }
+  75% { rotate: 8deg; }
+}
+
+@keyframes penguin-blink {
+  0%, 90%, 100% { scale: 1 1; }
+  95% { scale: 1 0.1; }
+}
+
+@keyframes flipper-wave {
+  0%, 100% { rotate: 0deg; }
+  25% { rotate: 25deg; }
+  75% { rotate: -5deg; }
+}
+
+@keyframes thought-float {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 1; }
+  50% { transform: translateY(-8px) scale(1.05); opacity: 0.8; }
+}
+
+@keyframes snowfall {
+  0% { transform: translateY(-10vh) translateX(0); opacity: 1; }
+  25% { transform: translateY(22vh) translateX(15px); }
+  50% { transform: translateY(48vh) translateX(-10px); opacity: 0.8; }
+  75% { transform: translateY(72vh) translateX(20px); }
+  100% { transform: translateY(105vh) translateX(-5px); opacity: 0; }
+}
+
+@keyframes footprint-fade {
+  0% { opacity: 0.4; }
+  100% { opacity: 0; }
+}
+
+@keyframes question-float {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(-40px) rotate(15deg); opacity: 0; }
+}
+
+.penguin-walk {
+  animation: penguin-walk 24s ease-in-out infinite;
+}
+
+.penguin-waddle {
+  animation: penguin-waddle 1s ease-in-out infinite;
+}
+
+.penguin-blink {
+  animation: penguin-blink 4s ease-in-out infinite;
+}
+
+.flipper-left {
+  animation: flipper-wave 1s ease-in-out infinite;
+  transform-origin: top right;
+}
+
+.flipper-right {
+  animation: flipper-wave 1s ease-in-out infinite reverse;
+  transform-origin: top left;
+}
+
+.thought-float {
+  animation: thought-float 3s ease-in-out infinite;
+}
+
+.question-float {
+  animation: question-float 2s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

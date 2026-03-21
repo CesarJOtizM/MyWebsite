@@ -473,6 +473,14 @@
       "stack": ["React", "Next.js", "Node.js", "Python", "AWS", "GCP", "React Native", "Flutter", "Docker", "CI/CD"]
     }
   },
+  "notFound": {
+    "code": "404",
+    "title": "Lost in the void",
+    "description": "This penguin wandered off the path and can't find its way back. Honestly, neither can we find that page.",
+    "hint": "Maybe it melted. Maybe it never existed. Who knows.",
+    "cta": "Take me home",
+    "penguinThought": "Where am I?!"
+  },
   "footer": {
     "builtWith": "Built with Next.js, TypeScript & Tailwind CSS",
     "rights": "All rights reserved."
