@@ -7,6 +7,7 @@ import { Menu, X, Download } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { LanguageSwitcher } from '@/components/ui/language-switcher';
+import { usePathname, useRouter } from '@/i18n/navigation';
 
 const NAV_ITEMS = [
   { key: 'about', href: '#about' },
@@ -24,6 +25,9 @@ export function Header() {
   const [hidden, setHidden] = useState(false);
   const [activeSection, setActiveSection] = useState<string>('');
   const lastScrollY = useRef(0);
+
+  const pathname = usePathname();
+  const router = useRouter();
 
   const { scrollY } = useScroll();
 
@@ -85,13 +89,19 @@ export function Header() {
   const handleNavClick = useCallback(
     (href: string) => {
       setMobileOpen(false);
+
+      if (pathname !== '/') {
+        router.push(`/${href}`);
+        return;
+      }
+
       const id = href.replace('#', '');
       const element = document.getElementById(id);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     },
-    [],
+    [pathname, router],
   );
 
   return (
