@@ -10,7 +10,7 @@ export const projects: ProjectData[] = [
   {
     slug: 'nevada-demo',
     translationKey: 'inventory',
-    liveUrl: 'https://jubilant-octo-invention-kappa.vercel.app/es/login',
+    liveUrl: 'https://invetory-system-git-development-nevada-tech-sas.vercel.app/es/login',
     featured: true,
   },
   {
